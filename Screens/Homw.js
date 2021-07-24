@@ -70,7 +70,7 @@ export default class HomeScreen extends React.Component{
     style={{
       width:50,
       height:80,
-      alignSelf:'left',
+      alignSelf:'center',
       right:-140,
       marginTop:-60
     }}
@@ -103,7 +103,7 @@ export default class HomeScreen extends React.Component{
       style={{ 
         width:50,
         height:80,
-        alignSelf:'left',
+        alignSelf:'center',
         right:-110,
         marginTop:-60
       }}
@@ -136,8 +136,8 @@ export default class HomeScreen extends React.Component{
       style={{ 
         width:100,
         height:70,
-        alignSelf:'left',
-        right:-160,
+        alignSelf:'center',
+        right:-90,
         marginTop:-60
       }}
     source={require('../assets/daily_pictures.png')}
