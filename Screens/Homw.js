@@ -128,7 +128,7 @@ export default class HomeScreen extends React.Component{
       fontWeight:"bold",
       fontSize:24,
       marginRight:100,
-      color:"black",
+      color:"black"
     }}
     >DailypicScreen</Text>
     

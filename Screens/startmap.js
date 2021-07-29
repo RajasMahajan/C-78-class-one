@@ -2,11 +2,8 @@ import * as React from 'react';
 import { Text, View, StyleSheet,TextInput } from 'react-native';
 import Constants from 'expo-constants';
 import { WebView } from 'react-native-webview';
- const logitude = this.state.logitude;
- const latitude = this.state.latitude;
- const path='https://virtualsky.lco.global/embed/index.html?longitude=${logitude}&latitude=${latitude}.704060&constellations=true&constellationlabels=true&showstarlabels=true&gridlines_az=true&live=true&projection=stereo&showdate=false&showposition=false'
+ 
 export default class StartMapScreen extends React.Component{
-  
   constructor(){
     super();
     this.state={
@@ -15,6 +12,9 @@ export default class StartMapScreen extends React.Component{
     }
   }
   render(){
+    const latitude=this.state.latitude;
+    const logitude = this.state.logitude;
+    const path='https://virtualsky.lco.global/embed/index.html?longitude=${logitude}&latitude=${latitude}.704060&constellations=true&constellationlabels=true&showstarlabels=true&gridlines_az=true&live=true&projection=stereo&showdate=false&showposition=false'
   return (
     <View
     style={{
@@ -41,9 +41,9 @@ export default class StartMapScreen extends React.Component{
     }}
     placeholder={"  enter longitude"}
     onChangeText={
-      (oplonitute)=>{
+      (text)=>{
         this.setState({
-          logitude:oplonitute
+          logitude:text
         })
     }
     }
@@ -58,9 +58,9 @@ export default class StartMapScreen extends React.Component{
     }}
     placeholder={"  enter latitude"}
     onChangeText={
-      (oplonitute)=>{
+      (text)=>{
         this.setState({
-          latitude:oplonitute
+          latitude:text
         })
     }
     }
